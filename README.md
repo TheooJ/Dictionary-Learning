@@ -1,7 +1,6 @@
 # Dictionary-Learning
 
- 
-
+## Background
 In recent years, matrix-factorization methods have become ubiquitous in machine learning, and have been used in a wide range of applications such as denoising, inpainting, recommender systems or clustering. This called for more scalable and robust methods to represent a signal, and recent advances in dictionary learning aim at learning both the decomposition of a signal in a basis and the basis itself.
 
 A signal $\mathbf{x}_i \in \mathbb{R}^{N}$ is decomposed in a basis (called the dictionary) $\mathbf{D} = [\mathbf{d}_1, \dots, \mathbf{d}_k ] \in \mathbb{R}^{N\times k}$, such that $\mathbf{x}_i \approx \mathbf{D} \boldsymbol{\alpha}_i$ (in the $\ell_2$ sense). The columns $\mathbf{d}_i, i=1, \dots, k$ of the dictionary are often referred to as the atoms and $\boldsymbol{\alpha}_i \in \mathbb{R}^{k}$ represent the weight of each of these in the representation of $\mathbf{x}_i$.
@@ -15,9 +14,10 @@ $$
 
 where $\lambda>0$ is a regularization parameter enforcing sparsity, $\mathcal{C} = \{ \mathbf{D} \in \mathbb{R}^{N \times k} \ \text{s.t.} \ \forall j = 1,...,k; \ \mathbf{d}_j^T \mathbf{d}_j \leq 1 \}$, so that the $\boldsymbol{\alpha}_i$ are not arbitrarily small. This function is minimized by alternatively optimizing the dictionary $\mathbf{D}$ and the parameters $\boldsymbol{\alpha}$.
 
-Further advances 
+## Project
+Supervised Dictionary Learning, interesting because it is usually viewed as an unsupervised learning problem[[1]](#1)
 
-"...the **go to** statement should be abolished..." [[1]](#1).
+Online learning for more optimized ressource allocation during learning [[2]](#2)
 
 ## References
 <a id="1">[1]</a> 
