@@ -21,6 +21,27 @@ The first paper, Supervised Dictionary Learning [[1]](#1), joins dictionary lear
 
 The second one, Online dictionary learning for sparse coding [[2]](#2), introduces a clever dictionary update step that allows for less computation time during learning. This paper received the Test of Time Award at ICML 2019, and is to this day still a reference on how to learn a basis to represent signals in.
 
+## Installation
+To try the notebook for yourself, run the following commands :
+
+**1) Create a new conda environment :**
+```bash
+conda create -n dictionary-learning python=3.8
+```
+
+**2) Activate :**
+```bash
+conda activate dictionary-learning
+```
+
+**3) Run install commands in this env :**
+
+```bash
+pip install poetry
+cd dictionary-learning
+poetry install
+```
+
 ## References
 <a id="1">[1]</a> 
 Julien Mairal, Jean Ponce, Guillermo Sapiro, Andrew Zisserman, and Francis Bach (2008). Supervised dictionary learning. Advances in neural information processing systems, 21. https://papers.nips.cc/paper/2008/file/c0f168ce8900fa56e57789e2a2f2c9d0-Paper.pdf
