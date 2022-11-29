@@ -12,7 +12,7 @@ $$
 \underset{\mathbf{D} \in \mathcal{C}, \ \alpha \in \mathbb{R}^{k \times n}}{\min} \ \dfrac{1}{n} \sum_{i=1}^n \left( \dfrac{1}{2} \lVert\mathbf{x}_i - \mathbf{D} \boldsymbol{\alpha}_i \lVert_2^2 \ + \ \lambda \lVert\boldsymbol{\alpha}_i\lVert_1 \right)
 $$
 
-where $\lambda>0$ is a regularization parameter enforcing sparsity, and $\mathcal{C} = \{ \mathbf{D} \in \mathbb{R}^{N \times k} \ \text{s.t.} \ \forall j = 1,...,k; \ \mathbf{d}_j^T \mathbf{d}_j \leq 1 \}$ a constraint on $\mathbf{D}$, so that the $\boldsymbol{\alpha}_i$'s are not arbitrarily small. This function is minimized by alternatively optimizing the dictionary $\mathbf{D}$ and the parameters $\boldsymbol{\alpha}$.
+where $\lambda>0$ is a regularization parameter enforcing sparsity, and $\mathcal{C} = \left\lbrace \mathbf{D} \in \mathbb{R}^{N \times k} \ \text{s.t.} \ \forall j = 1,...,k; \ \mathbf{d}_j^T \mathbf{d}_j \leq 1 \right\rbrace$ a constraint on $\mathbf{D}$, so that the $\boldsymbol{\alpha}_i$'s are not arbitrarily small. This function is minimized by alternatively optimizing the dictionary $\mathbf{D}$ and the parameters $\boldsymbol{\alpha}$.
 
 ## Project
 In this project, we derive the mathematical details behind dictionary learning, then present and reproduce the work in two articles. These papers are interesting because by modyfing the cost function or optimization scheme, they were able to include information about the task at hand and solve problems more efficiently.
